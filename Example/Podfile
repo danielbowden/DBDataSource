@@ -1,0 +1,5 @@
+platform :ios
+
+target "Demo" do
+  pod "DBDataSource", :path => "../"
+end
