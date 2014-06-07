@@ -1,6 +1,5 @@
 //
 //  DBDataSource.m
-//  AllTime
 //
 //  Created by Daniel Bowden on 28/02/2014.
 //  Copyright (c) 2014 Daniel Bowden. All rights reserved.
