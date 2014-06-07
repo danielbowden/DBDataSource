@@ -1,0 +1,14 @@
+PODS:
+  - DBDataSource (0.1.0)
+
+DEPENDENCIES:
+  - DBDataSource (from `../`)
+
+EXTERNAL SOURCES:
+  DBDataSource:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DBDataSource: 521dba3a63f4e299a6a44fd2bda9f42afd69d1d6
+
+COCOAPODS: 0.33.1
