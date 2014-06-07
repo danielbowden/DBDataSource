@@ -35,6 +35,7 @@ static NSString * const DemoCellIdentifier = @"DemoTableCellIdentifier";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"TableView";
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -52,6 +53,18 @@ static NSString * const DemoCellIdentifier = @"DemoTableCellIdentifier";
     self.tableView.dataSource = self.demoDataSource;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:DemoCellIdentifier];
     [self.view addSubview:self.tableView];
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *item = [self.demoDataSource itemAtIndexPath:indexPath];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Item selected" message:item delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alert show];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (NSArray *)generateDemoData
