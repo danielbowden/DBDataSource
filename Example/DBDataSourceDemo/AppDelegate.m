@@ -8,12 +8,17 @@
 
 #import "AppDelegate.h"
 
+#import "MenuViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    MenuViewController *viewController = [[MenuViewController alloc] initWithNibName:@"MenuViewController" bundle:nil];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
