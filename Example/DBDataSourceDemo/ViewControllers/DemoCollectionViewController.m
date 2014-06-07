@@ -36,6 +36,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"CollectionView";
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -56,6 +57,18 @@
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerNib:[DemoCollectionCell nib] forCellWithReuseIdentifier:[DemoCollectionCell cellIdentifier]];
     [self.view addSubview:self.collectionView];
+}
+
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    Person *person = [self.demoDataSource itemAtIndexPath:indexPath];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Item selected" message:person.firstName delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alert show];
+    
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
 }
 
 - (NSArray *)generateDemoData
