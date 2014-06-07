@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "DBDataSource"
-  s.version          = File.read('VERSION')
+  s.version          = "0.1.0"
   s.summary          = "A short description of DBDataSource."
   s.description      = <<-DESC
                        An optional longer description of DBDataSource
