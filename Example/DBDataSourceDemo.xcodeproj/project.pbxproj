@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6553BE261941B5AA00390159 /* DBDataSourceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DBDataSourceDemo.app; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6553BE261941B5AA00390159 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6553BE291941B5AA00390159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6553BE2B1941B5AA00390159 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6553BE2D1941B5AA00390159 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -102,7 +102,7 @@
 		6553BE271941B5AA00390159 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6553BE261941B5AA00390159 /* DBDataSourceDemo.app */,
+				6553BE261941B5AA00390159 /* Demo.app */,
 				6553BE411941B5AA00390159 /* DBDataSourceDemoTests.xctest */,
 			);
 			name = Products;
@@ -188,7 +188,7 @@
 			);
 			name = Demo;
 			productName = DBDataSourceDemo;
-			productReference = 6553BE261941B5AA00390159 /* DBDataSourceDemo.app */;
+			productReference = 6553BE261941B5AA00390159 /* Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6553BE401941B5AA00390159 /* DBDataSourceDemoTests */ = {
@@ -418,6 +418,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBDataSourceDemo/DBDataSourceDemo-Prefix.pch";
 				INFOPLIST_FILE = "DBDataSourceDemo/DBDataSourceDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -432,6 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBDataSourceDemo/DBDataSourceDemo-Prefix.pch";
 				INFOPLIST_FILE = "DBDataSourceDemo/DBDataSourceDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
