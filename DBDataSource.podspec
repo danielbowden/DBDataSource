@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "DBDataSource"
-  s.version          = "0.1.0"
-  s.summary          = "Use the CellConfigureBlock to populate the contents of your cell and initialise the datasource with an array."
+  s.version          = "0.1.1"
+  s.summary          = "DBDataSource is an easy to use datasource conforming to both UITableView and UICollectionView."
   s.description      = <<-DESC
 DBDataSource is an easy to use datasource conforming to both UITableView and UICollectionView that can be dropped in to a project to allow quick population of tableviews and collectionviews. Use the CellConfigureBlock to populate the contents of your cell and initialise the datasource with an array.
                        DESC
